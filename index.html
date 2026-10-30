@@ -1,1 +1,189 @@
-<h1>My Website</h1>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人主頁 - 趙芷妤</title>
+    <style>
+        :root {
+            --bg-color: #f7f3f5;
+            --card-bg: #ffffff;
+            --primary-text: #4a403a;
+            --accent-color: #d8a7b1;
+            --accent-hover: #b68993;
+            --sub-text: #8c7a6b;
+            --tag-bg: #f2e3e6;
+            --tag-text: #8a5a65;
+            --border-color: #ebdce0;
+        }
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-text);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 880px;
+            width: 100%;
+        }
+        .header {
+            background: var(--card-bg);
+            padding: 35px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(216, 167, 177, 0.15);
+            margin-bottom: 25px;
+            border-left: 6px solid var(--accent-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .header-title h1 {
+            margin: 0 0 8px 0;
+            color: var(--primary-text);
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            color: var(--sub-text);
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        .badge {
+            background: #f7f3f5;
+            padding: 6px 14px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: var(--sub-text);
+        }
+        .section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 22px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+            border: 1px solid var(--border-color);
+        }
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px dashed var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.35rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        p, li {
+            line-height: 1.8;
+            color: var(--primary-text);
+            font-size: 1.02rem;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .tag-group {
+            margin-top: 10px;
+        }
+        .tag {
+            display: inline-block;
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 0.88rem;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .contact-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .contact-item {
+            background: #faf6f8;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 個人標頭區塊 -->
+        <div class="header">
+            <div class="header-title">
+                <h1>趙芷妤</h1>
+                <div class="subtitle">亞洲大學 人工智慧學系 ｜ 大三</div>
+                <div class="tag-group">
+                    <span class="tag">✦ 人工智慧應用</span>
+                    <span class="tag">✦ 前端網頁建置</span>
+                    <span class="tag">✦ 數位插畫與繪圖</span>
+                    <span class="tag">✦ 3D 互動開發</span>
+                </div>
+            </div>
+            <div class="badge">
+                學號（匿名 ID）：zhyu-2026
+            </div>
+        </div>
+
+        <!-- 自我介紹區塊（必備，超過 200 字） -->
+        <div class="section">
+            <h2>🌸 關於我</h2>
+            <p>
+                你好！我是趙芷妤，目前就讀於亞洲大學人工智慧學系大三。我對於人工智慧技術的實際應用、網頁前端介面設計以及互動系統建置抱持著極大的熱忱。除了程式編程與邏輯開發之外，我也非常喜歡手繪透視畫、繪製建築立面圖、角色繪圖以及數位插畫創作。
+            </p>
+            <p>
+                我熱衷於將「設計美學」與「資訊技術」進行跨領域結合，期望能利用自己在科技與藝術雙方面的興趣，打造出兼具視覺質感與優良使用者體驗的數位產品。目前正積極學習前端開發、AI 輔助互動系統以及 3D 數位媒體製作。
+            </p>
+        </div>
+
+        <!-- 學歷與經歷區塊（加分項：履歷） -->
+        <div class="section">
+            <h2>🎓 學歷與經歷</h2>
+            <ul>
+                <li><strong>學歷背景：</strong> 亞洲大學 人工智慧學系（大三在學中）</li>
+                <li><strong>專案與研究：</strong> 參與網頁系統建置與規劃專案、大專生專題研究研究計畫規劃</li>
+                <li><strong>專業技能：</strong> HTML5 / CSS3、JavaScript、Python、Git & GitHub 平台操作、UI/UX 介面視覺設計</li>
+                <li><strong>媒體創作：</strong> Adobe Audition 音訊處理、Unity 3D 互動開發、手繪透視圖與數位角色繪圖</li>
+            </ul>
+        </div>
+
+        <!-- 成果與作品（加分項：履歷） -->
+        <div class="section">
+            <h2>✨ 成果與作品展示</h2>
+            <ul>
+                <li><strong>個人網站雙平台公開部署：</strong> 運用 GitHub Pages 與 Cloudflare Pages 實現自動化部署與雙平台公開網站。</li>
+                <li><strong>AI 輔助溝通系統原型規劃：</strong> 結合擴增實境（AR）與手勢識別技術，設計失語症輔助溝通之互動介面[cite: 1]。</li>
+                <li><strong>數位插畫與視覺美術作品：</strong> 進行多項角色手繪創作與數位插畫設計。</li>
+            </ul>
+        </div>
+
+        <!-- 聯絡方式（加分項：履歷） -->
+        <div class="section">
+            <h2>✉️ 聯絡方式</h2>
+            <div class="contact-box">
+                <div class="contact-item">
+                    <strong>📧 Email</strong><br>
+                    student@mail.asia.edu.tw
+                </div>
+                <div class="contact-item">
+                    <strong>🔗 GitHub 儲存庫</strong><br>
+                    https://github.com/你的帳號
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
